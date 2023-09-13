@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script>
+		
+		var pessoa = {
+			nome: "Jerônimo da Silva",
+			dataNascimento: "1960-02-21",
+			serie: "7° ano",
+			endereco: "Rua Apache, 123 - Madalena",
+			nomeMae: "Maria da Silva",
+			curso: "Ensino Fundamental",
+			idade: 63,
+			notas: [9.5, 6.8, 7.2, 4.7, 1.5],
+			peso: 75.6,
+			altura: 1.75,
+			calculaIMC: funcion (){
+				var imc = this.peso/(this.altura**2);
+				document.write ("IMC: "+imc);
+		}
+
+		
+		}
+
+		pessoa.calculaIMC ()
+
+		console.log (pessoa);
+
+		document.write (pessoa ["nome"]);
+		document.write ("<br>");
+		document.write (pessoa.endereco +" "+pessoa.idade);
+		document.write ("<br>");
+
+		for (var i = 0; i <= pessoa.notas.length -1; i++) {
+			document.write ((i+1) +"ª nota: "+pessoa.notas [i]);
+			document.write ("<br>");
+		}
+	</script>
+
+</body>
+</html>

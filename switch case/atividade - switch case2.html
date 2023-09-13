@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+	<head> 
+		<meta charset="utf-8"> 
+	</head>
+	<body>
+	<script>
+		
+		var quantidade_pessoas = 0;
+
+		var resposta = parseInt(prompt("Tem alguém aí? 1- Sim 0 - Não"));
+
+		while(resposta == 1) {
+		quantidade_pessoas = quantidade_pessoas + 1; //quantidade_pessoas++
+		resposta = parseInt(prompt("Tem alguém aí? 1- Sim 0 - Não"));
+	}
+	document.write("Pessoas presentes: "+quantidade_pessoas);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script>
+	
+	/*questão 1
+	function divide(x,y){
+		if(y==0){
+			document.write("VALOR INVÁLIDO");
+		}else{
+			var resultado = x/y;
+			document.write(resultado);
+		}
+	}
+	var valor1 = prompt ("Digite o valor 1:");
+	var valor2 = prompt ("Digite o valor 2:");
+
+	divide(valor1,valor2);*/
+
+	
+	/*questão 2
+	function triângulo (t1,t2,t3){
+		if (t1==t2 && t2==t3){
+			document.write("TRIÂNGULO EQUILÁTERO");
+		}
+		else{
+			if ((t1==t2 && t2!=t3) || (t2==t3 && t2!=t1) || (t3==t1 && t2!=t1)){
+				document.write("TRIÂNGULO ISÓCELES");
+			}else{
+				document.write("TRIÂNGULO ESCALENO");
+			}
+		}
+	}
+
+	var t1 = prompt ("Digite o valor 1:");
+	var t2 = prompt ("Digite o valor 2:");
+	var t3 = prompt ("Digite o valor 3:");
+	triângulo(t1,t2,t3);*/
+
+	/*function desconto (valor){
+		var percDesconto = 0;
+		var desconto = 0;
+		var totalAPagar = 0;
+
+		if(valor <= 500){
+			percDesconto = 0.1;
+			desconto = valor*percDesconto;
+			totalAPagar = valor - desconto;
+
+			document.write("Você ganhou 10% de desconto! <br> Desconto: R$" +desconto+" <br> Total a pagar: +totalAPagar");
+		}else{
+			percDesconto = 0.15;
+			desconto = valor*percDesconto;
+			totalAPagar = valor - desconto;
+
+			document.write("Você ganhou 15% de desconto! <br> Desconto: R$" +desconto+" <br> Total a pagar: "+totalAPagar);
+		}
+	}
+	var valor = prompt ("Digite o valor das compras:");
+	desconto(valor);*/
+
+	function caixa (valorComprado, opcao){
+		var totalAPagar = 0;
+		var  nomeOpcao = " ";
+		switch(opcao){
+		case "1":
+			nomeOpcao = "à vista";
+			totalAPagar = valorComprado - valorComprado*0.1;
+			break;
+		case "2":
+			nomeOpcao = "em duas vezes";
+			totalAPagar = valorComprado;
+			break;
+		case "3":
+			nomeOpcao = "de 3 a 10 vezes, com 3% de juros";
+			totalAPagar = valorComprado + valorComprado*0.03;
+		}
+		document.write ("Opção de pagamento: "+nomeOpcao+"<br>");
+		document.write ("Total a pagar: "+totalAPagar);
+	}
+
+	caixa (200, "3");
+
+</script>
+
+</body>
+</html>
